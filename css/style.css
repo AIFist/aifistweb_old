@@ -19,7 +19,7 @@ header{
     font-weight: bolder;
 }
 
-.ext-header{
+.showcase{
     background: linear-gradient(315deg, #f6fffe, #d9f4ff );
     height: 100vh;
     margin-top: 4.5rem;
@@ -28,50 +28,50 @@ header{
     position: relative;
 }
 
-.ext-header .text-box{
+.showcase .text-box{
     background: transparent;
-    width: 49%;
-    height: 55vh;
-    margin: 12rem 0 0 5rem;
+    width: 43%;
+    height: 65vh;
+    margin: 7.7rem 0 0 6.5rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    font-weight: 1000;
     position: absolute;
-    border: 1px solid red;
 }
 
-.ext-header .text-box .text-1{
+.showcase .text-box .text-1{
     background: linear-gradient(315deg, #ad73e4, #583b86);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-.ext-header .text-box .text-2{
+.showcase .text-box .text-2{
     background: linear-gradient(to right, #611874, #b99ce9);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-.ext-header .text-box .text-3{
+.showcase .text-box .text-3{
     background: linear-gradient(to right, #f5fcb5, #07723d);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-.ext-header .text-box .text-4{
+.showcase .text-box .text-4{
     background: linear-gradient(to right, #1a161d, #b32121);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-.ext-header .img-box{
-    background: transparent;
-    width: 40%;
+.showcase .img-box{
+    background: url(/image/1.jpg);
+    width: 35%;
     height: 70vh;
-    margin: 120px 43rem 10px 48rem;
+    margin: 120px 43rem 10px 49rem;
     position: absolute;
     border: 1px solid red;
 }
