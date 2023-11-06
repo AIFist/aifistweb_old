@@ -1,1 +1,148 @@
-fontawesome-free-6.4.2-web
+/*
+=================
+products section
+=================
+*/
+
+/*.Products{
+    background-color: white;
+    height: 245vh;
+    width: 100%;
+    margin-top: 18.2rem;
+    padding: 8px;
+    padding-left: 14px;
+    color: #222;
+    position: relative;
+    border: 3px dotted green;
+}*/
+
+/*.Products .p-box1{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 15rem 0 0 2rem ;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box2{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    margin: 15rem 0 0 29rem;
+    position: absolute;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box3{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    margin: 15rem 0 0 56rem;
+    position: absolute;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box4{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 35rem 0 0 2rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box5{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 35rem 0 0 29rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box6{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 35rem 0 0 56rem;;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box7{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 55rem 0 0 2rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box8{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 55rem 0 0 29rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box9{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 55rem 0 0 56rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box10{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 75rem 0 0 2rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box11{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 75rem 0 0 29rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}
+
+.Products .p-box12{
+    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    color: black;
+    height: 250px;
+    width: 28%;
+    position: absolute;
+    margin: 75rem 0 0 56rem;
+    box-shadow: 0px 4px 10px 1px rgb(166, 168, 168);
+}*/
+
+<!-- Initialize Slick slider 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.p-wrapper').slick({
+            slidesToShow: 1,
+            slidesToScroll: 2,
+            autoplay: true,
+        });
+    });
+</script> -->
