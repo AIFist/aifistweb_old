@@ -153,6 +153,7 @@ products section
 .p-slider .p-wrapper{
     width: 84%;
     height: 400px;
+    overflow: hidden;
     margin: 0px auto;
     border: 1px dashed white;
 }
@@ -177,6 +178,7 @@ products section
 .p-slider .p-wrapper .p-box{
     background: linear-gradient(315deg, #ffffff, #dad8d8 );
     display: inline-block;
+    margin: 0 10px;
     width: 10px;
     height: 350px;
 }
