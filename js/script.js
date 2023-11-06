@@ -6,9 +6,9 @@ $(document).ready(function(){
       autoplaySpeed: 2000,
     });
 
-    $('.p-wrapper').slick({
-        slidesToShow: 1,
-        slidesToScroll: 2,
-        autoplay: true,
-    });
+    // $('.p-wrapper').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 2,
+    //     autoplay: true,
+    // });
   });
