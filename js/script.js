@@ -4,6 +4,8 @@ $(document).ready(function(){
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
+      nextArrow: $('.next'),
+      prevArrow: $('.prev')
     });
 
     // $('.p-wrapper').slick({
