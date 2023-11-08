@@ -20,8 +20,8 @@ header{
     height: 691px;
     padding: 0.1px;
     margin: 0;
-    font-family: 'Sometype Mono', monospace;
-    font-size: 1.1rem;
+    font-family: 'Sometype', monospace;
+    font-size: 1.2rem;
     font-weight: bolder;
 }
 
@@ -96,7 +96,8 @@ header .logo-text{
     color: white;
     background-color: black;
     border-radius: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 header .logo-text span{
@@ -146,41 +147,62 @@ products section
 =================
 */
 
-.p-slider{
-    border: 1px solid red;
+.products{
+    background-color: rgb(250, 247, 247);
+    height: 740px;
+    position: relative;
 }
 
 .p-slider .p-wrapper{
     width: 84%;
-    height: 400px;
+    height: 480px;
     overflow: hidden;
-    margin: 0px auto;
-    border: 1px dashed white;
-}
-
-.Products .p-title{
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 3rem 0 0 35rem;
+    margin: 12rem 0 0 6rem;
     position: absolute;
 }
 
-.Products .p-text{
-    font-size: 1.1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 10px;
-    width: 35rem;
-    margin: 7rem 0 0 25.5rem;
+.products .p-title{
+    font-size: 2.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 4rem 0 0 35rem;
+    position: absolute;
+}   
+
+.products .p-text{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 7.5rem 0 0 17.8rem;
+    position: absolute;
+}
+
+.products .next{
+    background: linear-gradient(315deg, #5ec7bb, #2196f3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2.3rem;
+    margin: 27rem 0 0 78.5rem;
+    position: absolute;
+}
+
+.products .prev{
+    background: linear-gradient(315deg, #5ec7bb, #2196f3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2.3rem;
+    margin: 27rem 0 0 2.5rem;
     position: absolute;
 }
 
 .p-slider .p-wrapper .p-box{
-    background: linear-gradient(315deg, #ffffff, #dad8d8 );
+    background: linear-gradient(315deg, #f8f5f5, #dad8d8 );
     display: inline-block;
     margin: 0 10px;
     width: 10px;
-    height: 350px;
+    height: 460px;
+    border-radius: 5px;
 }
 
 /*
