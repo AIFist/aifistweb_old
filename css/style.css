@@ -150,19 +150,103 @@ header ul li a:hover{
     z-index: 3;
 }
 
+/*
+==============
+About section
+==============
+*/
+.about{
+    background-color: rgb(241, 241, 241);
+    height: 150vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 1px solid red;
+    position: relative;
+}
 
+.about .a-title{
+    border: 1px dashed blue;
+    font-size: 2.9rem;
+    font-weight: bold;
+    top: 3rem;
+    left: 37.2rem;
+    position: absolute;
+}
 
+.about .a-img{
+    border: 1px dotted rgb(0, 0, 0);
+    width: 41%;
+    height: 80vh;
+    top: 11.7rem;
+    left: 6rem;
+    position: absolute;
+}
 
+.about .a-img img{
+    width: 100%;
+    height: 80vh;
+    border: 1px solid red;
+}
+
+.about .a-text{
+    border: 1px dashed green;
+    width: 440px;
+    height: 80vh;
+    line-height: 1.9rem;
+    top: 11.7rem;
+    left: 49rem;
+    position: absolute;
+}
+
+.about .a-text .at-heading{
+    font-size: 1.7rem;
+    margin-left: 2px;
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.about .a-text ul{
+    line-height: 3rem;
+    list-style: none;
+    position: relative;
+}
+
+.about .a-text ul li{
+    margin-left: 0.9rem;
+}
+
+.about .a-text ul .al-img1{
+    height: 2.4vh;
+    width: 20px;
+    left: 25px;
+    top: 16px;
+    position: absolute;
+}
+
+.about .a-text ul .al-img2{
+    height: 2.4vh;
+    width: 20px;
+    left: 25px;
+    top: 4rem;
+    position: absolute;
+}
+
+.about .a-text ul .al-img3{
+    height: 2.4vh;
+    width: 20px;
+    left: 25px;
+    top: 7rem;
+    position: absolute;
+}
+
+.about .a-text .at-btn{
+    
+}
 
 /*
 =================
 products section
 =================
 */
-
-.p-slider{
-    border: 1px solid red;
-}
 
 .p-slider .p-wrapper{
     width: 84%;
@@ -297,8 +381,3 @@ blog section
     left: 56rem;
     position: absolute;
 }
-
-/*
-==============
-About section
-==============
