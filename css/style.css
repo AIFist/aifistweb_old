@@ -398,3 +398,38 @@ blog section
     left: 56rem;
     position: absolute;
 }
+
+/*
+================
+contact section
+================
+*/
+
+.contact{
+    background-image: url(/image/contactBG.jpeg);
+    height: 140vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1350px;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+
+.contact .c-title{
+    font-size: 2.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    top: 2.7rem;
+    left: 35rem;
+    position: absolute;
+}
+
+.contact .c-form{
+    background-color: #fff;
+    height: 110vh;
+    width: 45%;
+    top: 9.4rem;
+    left: 22.1rem;
+    position: absolute;
+}
