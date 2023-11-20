@@ -494,4 +494,50 @@ contact section
     outline: none;
 }
 
+.contact .c-form .email{
+    color: #3b3b3b;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    top: 13.7rem;
+    left: 2.3rem;
+    position: absolute;
+}
 
+.contact .c-form .email #email{
+    padding: 9.5px;
+    width: 531px;
+    font-size: 1rem;
+    top: 2rem;
+    left: 0;
+    position: absolute;
+    border:1px solid rgb(216, 213, 213);
+}
+
+.contact .c-form .email #email:focus{
+    border: 1.5px solid #0487f1;
+    outline: none;
+}
+
+.contact .c-form .subject{
+    color: #3b3b3b;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    top: 19.7rem;
+    left: 2.3rem;
+    position: absolute;
+}
+
+.contact .c-form .subject #subject{
+    padding: 9.5px;
+    width: 531px;
+    font-size: 1rem;
+    top: 2rem;
+    left: 0;
+    position: absolute;
+    border:1px solid rgb(216, 213, 213);
+}
+
+.contact .c-form .subject #subject:focus{
+    border: 1.5px solid #0487f1;
+    outline: none;
+}
