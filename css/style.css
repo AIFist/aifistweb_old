@@ -256,7 +256,7 @@ About section
 .about .a-text .at-btn:hover{
     margin: -5px 0 0 0;
     transition: 0.4s;
-    box-shadow: 0px 3px 10px 0.5px rgb(0, 170, 255);
+    box-shadow: 0px 3px 10px 0.5px rgb(114, 200, 243);
 }
 
 /*
@@ -432,6 +432,7 @@ contact section
     width: 46%;
     top: 9.4rem;
     left: 22.1rem;
+    border-radius: 5px;
     position: absolute;
     position: relative;
 }
@@ -590,5 +591,73 @@ contact section
 .contact .c-form .cm-btn:hover{
     margin: -5px 0 0 0;
     transition: 0.4s;
-    box-shadow: 0px 3px 10px 0.5px rgb(0, 170, 255);
+    box-shadow: 0px 3px 10px 0.5px rgb(114, 200, 243);
+}
+
+footer{
+    background-color: #fff;
+    height: 11rem;
+    position: relative;
+}
+
+ footer #facebook{
+    color: rgb(48, 145, 194);
+    font-size: 1.1rem;
+    top: 2.5rem;
+    left: 35.1rem;
+    position: absolute;
+}
+
+footer #instagram{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 37rem;
+    position: absolute;
+}
+
+footer #twitter{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 39.2rem;
+    position: absolute;
+}
+
+footer #linkdin{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 41.8rem;
+    position: absolute;
+}
+
+footer #tiktok{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 44.3rem;
+    position: absolute;
+}
+
+footer #youtube{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 46.7rem;
+    position: absolute;
+}
+
+footer .f-text{
+    color: #979797;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    top: 6rem;
+    left: 23.7rem;
+    position: absolute;
+}
+
+footer .f-text span{
+    font-size: 1.1rem;
+    color:  rgb(48, 145, 194);
 }
