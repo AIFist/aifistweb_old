@@ -25,8 +25,6 @@ header{
     font-weight: bolder;
 }
 
-
-
 header .logo{
     float: left;
     height: inherit;
@@ -242,12 +240,12 @@ About section
     background-color: #2196f3;
     color: #fff;
     padding: 6px;
-    width: 8rem;
+    width: 7.3rem;
     font-size: 1.1em;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 8px;
     left: 3rem;
     top: 26rem;
     position: absolute;
@@ -576,12 +574,12 @@ contact section
     background-color: #2196f3;
     color: #fff;
     padding: 9px;
-    width: 170px;
+    width: 160px;
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 8px;
     border: none;
     left: 2.4rem;
     top: 39rem;
@@ -593,6 +591,12 @@ contact section
     transition: 0.4s;
     box-shadow: 0px 3px 10px 0.5px rgb(114, 200, 243);
 }
+
+/*
+===============
+footer section
+===============
+*/
 
 footer{
     background-color: #fff;
