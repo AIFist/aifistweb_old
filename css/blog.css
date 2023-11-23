@@ -21,107 +21,69 @@ blog section
 
 .blog{
     background-color: #fff;
+    font-family: 'Inter', sans-serif;
     width: 1230px;
     margin-top: 30px;
     display: grid;
     grid-template-columns: 388px 388px 388px;
-    grid-template-rows: 450px 450px 450px;
+    grid-template-rows: 500px 500px 500px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
 
- .item{
+.blog .item{
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.blog .b-img{
-    width: 100%;
-    height: 40vh;
+.blog .item a{
+    color: #2196f3;
+    text-decoration: none;
+    text-align: center;
 }
 
-.blog .box-heading{
+.blog .item a:hover{
+    color: #186cb1;
+    transition: 0.4s;
     
-    font-size: 2.3rem;
+}
+
+.blog .item .b-img{
+    height: 35vh;
+    width: 388px;
+}
+
+.blog .item .b-heading{
+    font-size: 1.9em;
     font-weight: 400;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    margin: 15px 0 0 0;
-}
-
-.blog .b-pra{
-    color: #666;
-    font-size: 1.1em;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    margin: 10px;
-    margin-top: 30px;
-}
-
-.blog .rm-btn{
-    color: #0b80e0;
-    font-size: 1.1em;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    text-decoration: none;
+    top: 13.5rem;
+    left: 9px;
     position: absolute;
-    top: 41rem;
-    left: 9.5rem;
 }
 
-.blog a:hover{
-    color: #0f548d;
-    transition: 0.8s;
+.blog .item .b-names{
+    color: #9b9b9b;
+    top: 20.9rem;
+    left: 26px;
+    position: absolute;
 }
 
-.box-name{
-    color: #999;
-    font-size: 1.1em;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    margin: 10px;
-    margin-top: 20px;
+.blog .item .b-names .b-dot{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.box-name a{
-    text-decoration: none;
-    color: #0b80e0;
+.blog .item .b-text{
+    top: 22rem;
+    left: 26px;
+    position: absolute;
 }
 
-.box-name .b-dot{
-    margin: 2px;
+.blog .item .brm-btn{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 7px;
+    top: 27rem;
+    left: 138px;
+    position: absolute;
 }
-
-.blog .b-box1{
-    width: 30%;
-    height: 120vh;
-}
-
-.blog .b-box2{
-    width: 30%;
-    height: 120vh;
-}
-
-.blog .b-box3{
-    width: 30%;
-    height: 120vh;
-}
-*/
