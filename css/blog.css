@@ -4,28 +4,86 @@ blog section
 =============
 */
 
-.ext-header{
-    height: 150vh;
-    border: 1px solid red;
+.b-title{
+    background-color: #f5f5f5;
+    font-size: 2.3rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog{
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+    width: 1230px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 388px 388px 388px;
+    grid-template-rows: 500px 500px 500px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.blog .item{
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
-.ext-header .b-title{
-    font-family: 'Manrope', sans-serif;
-    font-size: 2.9rem;
-    font-weight: 1000;
-    top: 10rem;
-    left: 40rem;
-    position: absolute;
-}
-
-.ext-header .bh-text{
-    height: 3rem;
-    width: 43rem;
-    font-size: 1.1em;
+.blog .item a{
+    color: #2196f3;
+    text-decoration: none;
     text-align: center;
-    top: 15.7rem;
-    left: 21.1rem;
+}
+
+.blog .item a:hover{
+    color: #186cb1;
+    transition: 0.4s;
+    
+}
+
+.blog .item .b-img{
+    height: 35vh;
+    width: 388px;
+}
+
+.blog .item .b-heading{
+    font-size: 1.9em;
+    font-weight: 400;
+    top: 13.5rem;
+    left: 9px;
     position: absolute;
 }
 
+.blog .item .b-names{
+    color: #9b9b9b;
+    top: 20.9rem;
+    left: 26px;
+    position: absolute;
+}
+
+.blog .item .b-names .b-dot{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.blog .item .b-text{
+    top: 22rem;
+    left: 26px;
+    position: absolute;
+}
+
+.blog .item .brm-btn{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 7px;
+    top: 27rem;
+    left: 138px;
+    position: absolute;
+}
