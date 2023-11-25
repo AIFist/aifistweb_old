@@ -127,12 +127,14 @@ header ul li a:hover{
     font-weight: 600;
     background: rgb(85, 85, 85); /* Gradient from left to right */
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
 .highlight-text {
     background: linear-gradient(to right, #fa8c25, #52739e);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
