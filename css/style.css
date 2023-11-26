@@ -75,7 +75,7 @@ header ul li a{
 header ul li a:hover {
     transition: 0.5s;
     transform: scale(1.2);
-    text-shadow: -1px -1px 0 #575757, 1px -1px 0 #575757, -1px 1px 0 #575757, 1px 1px 0 #575757
+    text-shadow: -1px -3px 3px #615e5e, 0px -0px 0 #fffefe, -0px 0px 0 #575757, 0px 0px 0 #575757
 }
 
 header ul li #nav-hm{
@@ -331,7 +331,7 @@ team section
 .our-team{
     height: 110vh;
     position: relative;
-    border: 1px solid red;
+
 }
 
 .our-team .ot-title{
