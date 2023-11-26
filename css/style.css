@@ -382,7 +382,7 @@ team section
 
 .our-team .ot-box .otb-names #facebook:hover{
     background-color: #60b2ff;
-    transition: 0.3s;
+    transition: 0.4s;
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
     border: 1px solid #e2e1e1;
 }
@@ -398,7 +398,7 @@ team section
 
 .our-team .ot-box .otb-names #instagram:hover{
     background: linear-gradient(315deg, #ff84e4, #ff8d58);
-    transition: 0.3s;
+    transition: 0.4s;
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
     border: 1px solid #e2e1e1;
 }
@@ -413,7 +413,7 @@ team section
 
 .our-team .ot-box .otb-names #twitter:hover{
     background-color: #3f4246;
-    transition: 0.3s;
+    transition: 0.4s;
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
     border: 1px solid #e2e1e1;
 }
@@ -428,7 +428,7 @@ team section
 
 .our-team .ot-box .otb-names #linkdin:hover{
     background-color: #60b2ff;
-    transition: 0.3s;
+    transition: 0.4s;
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
     border: 1px solid #e2e1e1;
 }
