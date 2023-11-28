@@ -5,7 +5,7 @@
 body{
     padding: 0;
     margin: 0;
-}
+} */
 
 /*
 =================
@@ -16,6 +16,10 @@ products section
 .products {
     background-color: #7e7b7b;
     border: 1px solid red;
+}
+
+.p-slider {
+    position: relative;
 }
 
 .p-slider .p-wrapper {
@@ -51,23 +55,34 @@ products section
 }
 
 .p-slider .p-wrapper .p-box {
-    background: linear-gradient(315deg, #ffffff, #dad8d8);
+    background: linear-gradient(315deg, #5c5a5a, #a34747);
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 3rem;
     width: 10%;
     height: 350px;
     animation-name: cardAnimation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+    ttransition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.p-slider .p-wrapper .p-box.blur {
+    filter: blur(3px); /* Add blur for side cards */
+}
+
+.p-slider .p-wrapper .p-box.center {
+    transform: scale(1.2); /* Increase size for center card */
+    filter: blur(0); /* Remove blur for center card */
 }
 
 @keyframes cardAnimation {
     0% {
-        opacity: 0;
+        opacity: 10;
+        transform: translateX(200px);
         transform: translateX(-50px);
     }
     100% {
-        opacity: 1;
+        opacity: 3;
         transform: translateX(0);
     }
 }
