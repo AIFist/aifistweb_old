@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*
+=============
+team section
+=============
+*/
+
+.our-team{
+    height: 110vh;
+    position: relative;
+
+}
+
+.our-team .ot-title{
+    width: 100%;
+    font-size: 2.7em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 690;
+    text-align: center;
+    top: 4rem;
+    position: absolute;
+}
+
+.our-team .ot-text{
+    width: 100%;
+    color: #047747;
+    font-size: 1.3em;
+    font-weight: 590;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align:center ;
+    top: 3.5rem;
+    position: absolute;
+}
+
+.our-team .ot-box{
+    background-color: #273150;
+    color: #fff;
+    width: 20%;
+    height: 65vh;
+    position: relative;
+}
+
+.our-team .ot-box img{
+    width: 90%;
+    top: 11.5px;
+    left: 11.5px;
+    position: absolute;
+}
+
+.our-team .ot-box .otb-names{
+    font-family: 'Roboto Condensed', sans-serif;
+    top: 16rem;
+    left: 2.5rem;
+    position: absolute;
+    position: relative;
+}
+
+.our-team .ot-box .otb-names p{
+    color: #bbb7b7;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    top: 1.5rem;
+    left: 1rem;
+    position: absolute;
+}
+
+.our-team .ot-box .otb-names .ot-icons{
+    top: 5rem;
+    position: absolute;
+}
+
+.our-team .ot-box .otb-names #facebook{
+    margin-left: 1.rem;
+    font-size: 1.2em;
+    background-color: #1877f2;
+    padding: 3.5px;
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.our-team .ot-box .otb-names #facebook:hover{
+    background-color: #60b2ff;
+    transition: 0.4s;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #e2e1e1;
+}
+
+.our-team .ot-box .otb-names #instagram{
+    color: #fff;
+    margin-left: 1.3rem;
+    font-size: 1.2em;
+    background: linear-gradient(315deg, #c32aa3, #f46f30);
+    padding: 3.5px;
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.our-team .ot-box .otb-names #instagram:hover{
+    background: linear-gradient(315deg, #ff84e4, #ff8d58);
+    transition: 0.4s;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #e2e1e1;
+}
+
+.our-team .ot-box .otb-names #twitter{
+    font-size: 1.2em;
+    margin-left: 1.3rem;
+    background-color: #14171a;
+    padding: 3.5px;
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.our-team .ot-box .otb-names #twitter:hover{
+    background-color: #3f4246;
+    transition: 0.4s;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #e2e1e1;
+}
+
+.our-team .ot-box .otb-names #linkdin{
+    font-size: 1.2em;
+    margin-left: 1.3rem;
+    background-color:  #0a66c2;
+    padding: 3.5px;
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.our-team .ot-box .otb-names #linkdin:hover{
+    background-color: #60b2ff;
+    transition: 0.4s;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #e2e1e1;
+}
+
+.our-team .ot-box1{
+    top: 13rem;
+    left: 2rem;
+    position: absolute;
+}
+
+.our-team .ot-box2{
+    top: 13rem;
+    left: 65rem;
+    position: absolute;
+}
+
+.our-team .ot-box3{
+    top: 13rem;
+    left: 44.2rem;
+    position: absolute;
+}
+
+.our-team .ot-box3 img{
+    height: 37.2vh;
+}
+
+.our-team .ot-box3 p{
+   margin-left: 2rem;
+}
+
+.our-team .ot-box4{
+    top: 13rem;
+    left: 23rem;
+    position: absolute;
+}
+
+.our-team .ot-box4 img{
+    height: 37.2vh;
+}

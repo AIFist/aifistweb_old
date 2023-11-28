@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*
+================
+contact section
+================
+*/
+
+.contact{
+    background-image: url(/image/contactBG.jpeg);
+    height: 148vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1350px;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+
+.contact .c-title{
+    font-size: 2.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    top: 2.7rem;
+    left: 35rem;
+    position: absolute;
+}
+
+.contact .c-form{
+    background-color: #fff;
+    color: #000;
+    height: 110vh;
+    width: 46%;
+    top: 9.4rem;
+    left: 22.1rem;
+    border-radius: 5px;
+    position: absolute;
+    position: relative;
+}
+
+.contact .c-form .cf-title{
+    font-size: 1.4rem;
+    font-weight: 550;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    top: 2.7rem;
+    left: 2.3rem;
+    position: relative;
+}
+
+.contact .c-form .fname{
+    color: #646464;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    top: 7.6rem;
+    left: 2.3rem;
+    position: absolute;
+}
+
+.contact .c-form .fname #fname{
+    padding: 10px;
+    width: 255px;
+    font-size: 1rem;
+    top: 2rem;
+    left: 0;
+    position: absolute;
+    border:1px solid rgb(216, 213, 213);
+}
+
+.contact .c-form .fname #fname:focus{
+    border: 1.5px solid #0487f1;
+    outline: none;
+    transition: 0.5s;
+}
+
+.contact .c-form .lname{
+    color: #646464;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    top: 7.6rem;
+    left: 20rem;
+    position: absolute;
+}
+
+.contact .c-form .lname #lname{
+    padding: 10px;
+    width: 260px;
+    font-size: 1rem;
+    top: 2rem;
+    left: 0;
+    position: absolute;
+    border:1px solid rgb(216, 213, 213);
+}
+
+.contact .c-form .lname #lname:focus{
+    border: 1.5px solid #0487f1;
+    outline: none;
+    transition: 0.5s;
+}
+
+.contact .c-form .email{
+    color: #646464;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    top: 13.7rem;
+    left: 2.3rem;
+    position: absolute;
+}
+
+.contact .c-form .email #email{
+    padding: 9.5px;
+    width: 541px;
+    font-size: 1rem;
+    top: 2rem;
+    left: 0;
+    position: absolute;
+    border:1px solid rgb(216, 213, 213);
+}
+
+.contact .c-form .email #email:focus{
+    border: 1.5px solid #0487f1;
+    outline: none;
+    transition: 0.5s;
+}
+
+.contact .c-form .subject{
+    color: #646464;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    top: 19.7rem;
+    left: 2.3rem;
+    position: absolute;
+}
+
+.contact .c-form .subject #subject{
+    padding: 9.5px;
+    width: 541px;
+    font-size: 1rem;
+    top: 2rem;
+    left: 0;
+    position: absolute;
+    border:1px solid rgb(216, 213, 213);
+}
+
+.contact .c-form .subject #subject:focus{
+    border: 1.5px solid #0487f1;
+    outline: none;
+    transition: 0.5s;
+}
+
+.contact .c-form .message{
+    color: #646464;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    top: 25.7rem;
+    left: 2.3rem;
+    position: absolute;
+}
+
+.contact .c-form .message #message{
+    padding: 9.5px;
+    width: 541px;
+    font-size: 1rem;
+    top: 2rem;
+    left: 0;
+    position: absolute;
+    border:1px solid rgb(216, 213, 213);
+}
+
+.contact .c-form .message #message:focus{
+    border: 1.5px solid #0487f1;
+    outline: none;
+    transition: 0.5s;
+}
+
+.contact .c-form .cm-btn{
+    background-color: #2196f3;
+    color: #fff;
+    padding: 9px;
+    width: 160px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    left: 2.4rem;
+    top: 39rem;
+    position: absolute;
+}
+
+.contact .c-form .cm-btn:hover{
+    margin: -5px 0 0 0;
+    transition: 0.4s;
+    box-shadow: 0px 3px 10px 0.5px rgb(114, 200, 243);
+}
