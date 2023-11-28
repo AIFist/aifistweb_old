@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+===============
+footer section
+===============
+*/
+
+footer{
+    background-color: #fff;
+    height: 11rem;
+    position: relative;
+}
+
+ footer #facebook{
+    color: rgb(48, 145, 194);
+    font-size: 1.1rem;
+    top: 2.5rem;
+    left: 33.1rem;
+    position: absolute;
+}
+
+footer #github{
+    color: rgb(48, 145, 194);
+    font-size: 1.1rem;
+    top: 2.5rem;
+    left: 34.8rem;
+    position: absolute;
+}
+
+footer #instagram{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 37rem;
+    position: absolute;
+}
+
+footer #twitter{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 39.2rem;
+    position: absolute;
+}
+
+footer #linkdin{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 41.8rem;
+    position: absolute;
+}
+
+footer #tiktok{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 44.3rem;
+    position: absolute;
+}
+
+footer #youtube{
+    color: rgb(48, 145, 194);
+    font-size: 1.2rem;
+    top: 2.5rem;
+    left: 46.7rem;
+    position: absolute;
+}
+
+footer .f-text{
+    color: #979797;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    top: 6rem;
+    left: 23.7rem;
+    position: absolute;
+}
+
+footer .f-text span{
+    font-size: 1.1rem;
+    color:  rgb(48, 145, 194);
+}
