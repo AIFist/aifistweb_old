@@ -2,14 +2,14 @@ $(document).ready(function(){
     $('.p-wrapper').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         nextArrow: $('.next'),
         prevArrow: $('.prev'),
         cssEase: 'ease-in-out',
-        speed: 1080,
-        fade: false,
+        speed: 1000,
         focus: 'center',
+        smoothScroll: true,
         centerMode: true, // Enable center mode
         centerPadding: '0', // Adjust padding as needed
     });
