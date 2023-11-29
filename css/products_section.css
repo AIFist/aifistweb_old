@@ -63,11 +63,11 @@ products section
     animation-name: cardAnimation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    ttransition: transform 5.5s ease-in-out, filter 8.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, filter 2.5s ease-in-out;
 }
 
 .p-slider .p-wrapper .p-box.blur {
-    filter: blur(3px); /* Add blur for side cards */
+    filter: blur(2.7px); /* Add blur for side cards */
 }
 
 .p-slider .p-wrapper .p-box.center {

@@ -7,7 +7,7 @@ $(document).ready(function(){
         nextArrow: $('.next'),
         prevArrow: $('.prev'),
         cssEase: 'ease-in-out',
-        speed: 1000,
+        speed: 1500,
         focus: 'center',
         smoothScroll: true,
         centerMode: true, // Enable center mode
