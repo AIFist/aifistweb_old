@@ -15,13 +15,11 @@ products section
 
 .products {
     background-color: #7e7b7b;
-    border: 1px solid red;
 }
 
 .p-slider {
     height: 123.3vh;
     position: relative;
-    border: 1px solid red;
 }
 
 .p-slider .p-wrapper {
@@ -29,7 +27,6 @@ products section
     height: 90vh;
     overflow: hidden;
     margin: 45px auto;
-    border: 1px dashed green;
 }
 
 .products .p-title {
@@ -49,9 +46,59 @@ products section
 }
 
 .products .next{
+    font-size: 2.4rem;
+    height: 8vh;
+    width: 55px;
+    text-align: center;
+    padding: 8px;
+    top: 27rem;
+    right: 0;
     position: absolute;
-    border: 1px solid red;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+    visibility: none;
 }
+
+.products .prev{
+    font-size: 2.4rem;
+    height: 8vh;
+    width: 55px;
+    text-align: center;
+    padding: 8px;
+    top: 27rem;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    
+}
+
+.products .next::before,
+.products .prev::before,
+.products .next::after,
+.products .prev::after {
+    display: none;
+    transition: transform 0.9s ease;
+}
+
+.products:hover .next::before,
+.products:hover .prev::before,
+.products:hover .next::after,
+.products:hover .prev::after {
+    display: initial;
+    background: linear-gradient(315deg, #cdfff9, #1079cf );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.5px rgb(6, 22, 36);
+    transform: translateX(0);
+    margin-right: 10px;
+    margin-left: 6px;
+    transform: translateX(50px);
+}
+
 
 .p-slider .p-wrapper .p-box {
     background: linear-gradient(315deg, #ececec, #dfdddd);
@@ -66,6 +113,7 @@ products section
     transition: transform 1.5s ease-in-out, filter 1.4s ease-in-out;
     position: relative;
     box-shadow: 0px 3px 10px 0.5px rgb(179, 179, 179);
+    z-index: 1;
 }
 
 .p-slider .p-wrapper .p-box img{
