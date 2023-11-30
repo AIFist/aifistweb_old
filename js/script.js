@@ -12,6 +12,7 @@ $(document).ready(function(){
         smoothScroll: true,
         centerMode: true, // Enable center mode
         centerPadding: '0', // Adjust padding as needed
+        Infinity: true, // Enable infinite mode
     });
     // Add this inside your document ready function
   $('.p-wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide){

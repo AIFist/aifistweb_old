@@ -16,6 +16,7 @@ team section
 .our-team{
     height: 110vh;
     position: relative;
+    border: 2px dashed blue;
 
 }
 
