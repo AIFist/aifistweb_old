@@ -5,7 +5,7 @@
 body{
     padding: 0;
     margin: 0;
-}
+} */
 
 /*
 =================
@@ -15,59 +15,191 @@ products section
 
 .products {
     background-color: #7e7b7b;
-    border: 1px solid red;
+}
+
+.p-slider {
+    height: 123.3vh;
+    position: relative;
 }
 
 .p-slider .p-wrapper {
     width: 100%;
-    height: 400px;
+    height: 90vh;
     overflow: hidden;
-    margin: 0px auto;
-    border: 1px dashed white;
+    margin: 45px auto;
 }
 
-.Products .p-title {
-    font-size: 4rem;
+.products .p-title {
+    height: 8px;
+    font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 3rem auto;
     position: relative;
     text-align: center;
-    animation-name: cardAnimation;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
 }
 
-.Products .p-text {
+.products .p-text {
     font-size: 1.1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    padding: 10px;
     width: 100%;
-    margin: 7rem auto;
-    position: relative;
-    animation-name: cardAnimation;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
 }
 
+.products .next{
+    font-size: 2.4rem;
+    height: 8vh;
+    width: 55px;
+    text-align: center;
+    padding: 8px;
+    top: 27rem;
+    right: 0;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+    visibility: none;
+}
+
+.products .prev{
+    font-size: 2.4rem;
+    height: 8vh;
+    width: 55px;
+    text-align: center;
+    padding: 8px;
+    top: 27rem;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    
+}
+
+.products .next::before,
+.products .prev::before,
+.products .next::after,
+.products .prev::after {
+    display: none;
+    transition: transform 0.9s ease;
+}
+
+.products:hover .next::before,
+.products:hover .prev::before,
+.products:hover .next::after,
+.products:hover .prev::after {
+    display: initial;
+    background: linear-gradient(315deg, #cdfff9, #1079cf );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.5px rgb(6, 22, 36);
+    transform: translateX(0);
+    margin-right: 10px;
+    margin-left: 6px;
+    transform: translateX(50px);
+}
+
+
 .p-slider .p-wrapper .p-box {
-    background: linear-gradient(315deg, #ffffff, #dad8d8);
+    background: linear-gradient(315deg, #ececec, #dfdddd);
     display: inline-block;
-    margin: 0 10px;
+    margin: 3.9rem 2rem;
     width: 10%;
-    height: 350px;
+    height: 70vh;
+    border-radius: 12px;
     animation-name: cardAnimation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+    transition: transform 1.5s ease-in-out, filter 1.4s ease-in-out;
+    position: relative;
+    box-shadow: 0px 3px 10px 0.5px rgb(179, 179, 179);
+    z-index: 1;
+}
+
+.p-slider .p-wrapper .p-box img{
+    width: 100%;
+    height: 60%;
+    border-radius: 8px 8px 3.8px 3.8px;
+}
+
+.p-box .p-names{
+    position: relative;
+}
+
+.p-box .p-heading{
+    height: 10px;
+    color: rgb(53, 53, 53);
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 0.1px;
+    padding: 0;
+    margin-top: 0.9rem;
+}
+
+.p-box .p-names .p1{
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.6px;
+    text-align: center;
+    height: 8px;
+    margin-top: 25px;
+    
+}
+
+.p-box .p-names .p2{
+    color: rgb(122, 122, 122);
+    height: 0.1px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.6px;
+    text-align: center;
+    height: 8px;
+}
+
+.p-box .p-names .p3{
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+.p-box .p-btn{
+    color: #0eaad1;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.5px;
+    top: 24.9rem;
+    left: 9.1rem;
+    position: absolute;
+}
+
+.p-box .p-btn:hover{
+    color: #0f6fbe;
+}
+
+.p-slider .p-wrapper .p-box.blur {
+    filter: blur(2.7px); /* Add blur for side cards */
+}
+
+.p-slider .p-wrapper .p-box.center {
+    transform: scale(1.2); /* Increase size for center card */
+    filter: blur(0); /* Remove blur for center card */
 }
 
 @keyframes cardAnimation {
     0% {
-        opacity: 0;
+        opacity: 10;
+        transform: translateX(200px);
         transform: translateX(-50px);
     }
     100% {
-        opacity: 1;
+        opacity: 3;
         transform: translateX(0);
     }
 }

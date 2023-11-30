@@ -28,7 +28,7 @@ header .logo{
     height: inherit;
     margin-left: 1.5em;
     cursor: pointer;
-    margin-top: 1.5px;
+    margin-top: 3px;
 }
 
 header .logo-text{
