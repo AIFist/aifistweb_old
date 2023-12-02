@@ -14,11 +14,12 @@ products section
 */
 
 .products {
-    background-color: #7e7b7b;
+    background-color: rgb(209, 206, 206);
 }
 
 .p-slider {
-    height: 123.3vh;
+    background: #f9fcfd;
+    height: 136vh;
     position: relative;
 }
 
@@ -27,15 +28,18 @@ products section
     height: 90vh;
     overflow: hidden;
     margin: 45px auto;
+    top: 11.8rem;
+    position: absolute;
 }
 
 .products .p-title {
     height: 8px;
     font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 3rem auto;
     position: relative;
-    text-align: center;
+    top: 2.5rem;
+    left: 36rem;
+    position: absolute;
 }
 
 .products .p-text {
@@ -43,6 +47,8 @@ products section
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     width: 100%;
+    top: 8rem;
+    position: absolute;
 }
 
 .products .next{
