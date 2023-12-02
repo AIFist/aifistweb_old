@@ -17,6 +17,7 @@ About section
     height: 120vh;
     font-family: 'Roboto Condensed', sans-serif;
     position: relative;
+    border: 1.5px solid red;
 }
 
 .about .a-title{
@@ -41,6 +42,7 @@ About section
 }
 
 .about .a-text{
+    background-color: white;
     color: rgb(145, 139, 139);
     width: 440px;
     height: 80vh;
@@ -51,14 +53,22 @@ About section
     top: 11.7rem;
     left: 49rem;
     position: absolute;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px 3px rgb(204, 204, 204);
 }
 
 .about .a-text .at-heading{
     color: #000;
     font-size: 1.7rem;
-    margin-left: 2px;
+    height: 30px;
+    margin-left: 0.9rem;
     margin-top: 30px;
     font-family: 'Quicksand', sans-serif;
+}
+
+.about .a-text p{
+    margin-left: 0.9rem;
+
 }
 
 .about .a-text ul{
@@ -105,8 +115,8 @@ About section
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
-    left: 3rem;
-    top: 26rem;
+    left: 3.5rem;
+    top: 26.3rem;
     position: absolute;
 }
 

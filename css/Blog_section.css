@@ -44,6 +44,7 @@ blog section
 .blog .item{
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
+    border-radius: 8px;
 }
 
 .blog .item a{
@@ -61,6 +62,7 @@ blog section
 .blog .item .b-img{
     height: 35vh;
     width: 388px;
+    border-radius: 8px 8px 0 0;
 }
 
 .blog .item .b-heading{
