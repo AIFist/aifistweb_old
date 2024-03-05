@@ -15,7 +15,7 @@ jobs:
           command: npm install -g firebase-tools
       - run:
           name: Firebase Login
-          command: firebase login --no-interactive --token "$FIREBASE_TOKEN"
+          command: firebase login --token "$FIREBASE_TOKEN"
       - run:
           name: Deploy to Firebase Hosting
           command: firebase deploy --only hosting
@@ -28,4 +28,3 @@ workflows:
             branches:
               only:
                 - main
-
