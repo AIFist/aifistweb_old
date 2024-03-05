@@ -7,16 +7,19 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update and Install Firebase CLI
+          name: Install Firebase CLI
+          command: npm install -g firebase-tools
+      # Use CircleCI secrets to securely store and access Firebase token
+      - run:
+          name: Retrieve Firebase Token
           command: |
-            npm install -g firebase-tools@latest
-            firebase --version  # Check the version to ensure it's updated
+            FIREBASE_TOKEN=$(circleci secrets get FIREBASE_TOKEN)
       - run:
-          name: Firebase Login
-          command: firebase login --no-interactive --token ${FIREBASE_TOKEN}
+          name: Firebase Login (using retrieved token)
+          command: firebase deploy --token "$FIREBASE_TOKEN"
       - run:
-          name: Deploy to Firebase Hosting
-          command: firebase deploy --only hosting
+          name: Deploy to Firebase Hosting (using retrieved token)
+          command: firebase deploy --only hosting --token "$FIREBASE_TOKEN"
 
 workflows:
   deploy:
@@ -26,3 +29,4 @@ workflows:
             branches:
               only:
                 - main
+
