@@ -1,0 +1,46 @@
+version: 2
+
+jobs:
+  lint_and_format:
+    docker:
+      - image: cimg/node:21.6.1  
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - npm-deps-{{ checksum "package-lock.json" }}
+           
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: npm-deps-{{ checksum "package-lock.json" }}
+
+  deploy_to_firebase:
+    docker:
+      - image: cimg/node:21.6.1
+    steps:
+      - checkout
+      - run:
+          name: Install Firebase CLI
+          command: npm install -g firebase-tools
+      - run:
+          name: Firebase Login
+          command: firebase login --no-interactive --token $FIREBASE_TOKEN
+      - run:
+          name: Deploy to Firebase Hosting
+          command: firebase deploy --only hosting
+
+workflows:
+  lint_format_and_deploy:
+    jobs:
+      - lint_and_format
+      - deploy_to_firebase:
+          requires:
+            - lint_and_format
+          filters:
+            branches:
+              only:
+                - master
