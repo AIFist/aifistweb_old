@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-        - image: cimg/node:21.6.2  # Use Node.js Docker image
+      - image: cimg/node:21.6.2  # Use Node.js Docker image
     working_directory: ~/project
     steps:
       - checkout
@@ -15,7 +15,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - public
+            - D:\AI Fist company work\aifistweb_old
   deploy:
     docker:
       - image: cimg/node:21.6.2 # Use Node.js Docker image
@@ -39,4 +39,4 @@ workflows:
                 - main
       - deploy:
           requires:
-            - build
+            - build 
