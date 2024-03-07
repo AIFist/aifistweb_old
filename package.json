@@ -1,4 +1,9 @@
 {
+  "name": "aifistweb_old",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Add your build command here'"
+  },
   "dependencies": {
     "node": "^21.7.0",
     "punycode": "^2.3.1"
