@@ -15,7 +15,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - D:\AI Fist company work\aifistweb_old
+            - aifistweb_old  # Use relative path to the project directory
   deploy:
     docker:
       - image: cimg/node:21.6.2 # Use Node.js Docker image
@@ -40,3 +40,4 @@ workflows:
       - deploy:
           requires:
             - build 
+
