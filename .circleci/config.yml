@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-       - image: cimg/node:21.6.2
+      - image: cimg/node:21.6.2
 
     steps:
       - checkout
@@ -12,15 +12,10 @@ jobs:
           name: Install Firebase Tools
           command: npm install -g firebase-tools
 
-      # Authenticate with Firebase
+      # Authenticate with Firebase using service account key
       - run:
           name: Authenticate with Firebase
-          command: firebase login:ci --interactive
-
-      # Build and deploy to Firebase Hosting
-      - run:
-          name: Deploy to Firebase Hosting
-          command: firebase deploy --only hosting --token $FIREBASE_TOKEN
+          command: echo $GOOGLE_APPLICATION_CREDENTIALS | base64 --decode > ${HOME}/gcp-key.json && firebase deploy --only hosting --token ${HOME}/gcp-key.json
 
 workflows:
   deploy_firebase_website:
@@ -30,4 +25,5 @@ workflows:
             branches:
               only:
                 - main
+
 
