@@ -11,22 +11,12 @@ jobs:
           name: Install Firebase Tools
           command: npm install -g firebase-tools
 
-      # Authenticate with Firebase using service account key (using temporary file)
-      - run:
-          name: Create Temporary Key File
-          command: |
-            KEY_FILE=$(mktemp)
-            echo ${GOOGLE_APPLICATION_CREDENTIALS} | base64 --decode > $KEY_FILE
-            echo "Created temporary key file: $KEY_FILE"
-
+      # Authenticate with Firebase using service account key
       - run:
           name: Authenticate with Firebase
-          command: firebase deploy --only hosting --token $KEY_FILE
-
-      # (Optional) Delete temporary key file
-      - run:
-          name: Clean Up Temporary Key File
-          command: rm -f $KEY_FILE
+          command: |
+            echo $GOOGLE_APPLICATION_CREDENTIALS | base64 --decode > ${HOME}/gcp-key.json
+            firebase deploy --only hosting --token ${HOME}/gcp-key.json
 
 workflows:
   deploy_firebase_website:
@@ -36,5 +26,3 @@ workflows:
             branches:
               only:
                 - main
-
-
