@@ -29,7 +29,7 @@ jobs:
         run: npm ci
 
       - name: Publish package
-        run: npm publish --provenance --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Replace with your secret variable name
 
