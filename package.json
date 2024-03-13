@@ -7,5 +7,6 @@
   "dependencies": {
     "node": "^21.7.0",
     "punycode": "^2.3.1"
-  }
+  },
+  "access": "public"
 }
