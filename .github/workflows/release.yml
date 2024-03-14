@@ -46,7 +46,7 @@ jobs:
       - name: Determine if release notes exist
         id: release_notes
         run: |
-          CHANGED=$(git log --pretty=format:'%s' ${{ github.event.before }}..${{ github.sha }} | grep -E '^(feat|fix|perf|refactor|style|test|chore)(\(.+\))?: .+' || true)
+          CHANGED=$(git log --pretty=format:'%s' ${{ github.event.before }}..${{ github.sha }} || true)
           if [ -n "$CHANGED" ]; then
             echo "::set-output name=notes::true"
           else
