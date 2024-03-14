@@ -1,0 +1,15 @@
+{
+  "name": "aifistweb_old",
+  "version": "2.0.0",
+  "scripts": {
+    "build": "echo 'Add your build command here'"
+  },
+  "dependencies": {
+    "node": "^21.7.0",
+    "punycode": "^2.3.1"
+  },
+  "access": "public",
+  "repository": {
+    "url": "https://github.com/AIFist/aifistweb_old"
+  }
+}

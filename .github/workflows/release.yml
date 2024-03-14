@@ -1,0 +1,61 @@
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  publish-to-npm:
+    name: Publish to npm
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+          cache: npm
+
+      # Optional step to clear npm cache
+      - name: Clear npm Cache (Optional)
+        run: npm cache clean --force
+
+      - name: Install dependencies and build
+        run: npm ci
+
+      - name: Publish package
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Replace with your secret variable name
+
+  create-github-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: publish-to-npm  # This job depends on the successful completion of publish-to-npm
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine if release notes exist
+        id: release_notes
+        run: |
+          CHANGED=$(git log --pretty=format:'%s' ${{ github.event.before }}..main || true)
+          if [ -n "$CHANGED" ]; then
+            echo "::set-output name=notes::true"
+          else
+            echo "::set-output name=notes::false"
+          fi
+      - name: Create Release (if there are release notes)
+        if: steps.release_notes.outputs.notes == 'true'
+        run: gh release create ${{ github.ref }} --generate-notes
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}  # Replace with your secret variable name
+
+        
