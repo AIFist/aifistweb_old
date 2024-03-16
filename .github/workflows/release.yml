@@ -46,12 +46,12 @@ jobs:
       - name: Determine if release notes exist
         id: release_notes
         run: |
-          CHANGED=$(git log --pretty=format:'%s' ${{ github.event.before }}..main || true)
-          if [ -n "$CHANGED" ]; then
+          if [[ $(git status --porcelain -- "*.md" | grep CHANGELOG.md) ]]; then
             echo "::set-output name=notes::true"
           else
             echo "::set-output name=notes::false"
           fi
+
       - name: Create Release (if there are release notes)
         if: steps.release_notes.outputs.notes == 'true'
         run: gh release create ${{ github.ref }} --generate-notes
