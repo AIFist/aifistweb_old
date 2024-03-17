@@ -1,8 +1,9 @@
+name: Publish to npm and Create GitHub Release
+
 on:
   push:
     tags:
-      - 'v*'
-  workflow_dispatch:
+      - 'v*'   # Trigger on tags matching v*
 
 jobs:
   publish-to-npm:
@@ -14,10 +15,10 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Setup node
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 20
+          node-version: 20   # Corrected node version
           registry-url: 'https://registry.npmjs.org'
           cache: npm
 
@@ -46,10 +47,12 @@ jobs:
       - name: Determine if release notes exist
         id: release_notes
         run: |
-          if [[ $(git status --porcelain -- "*.md" | grep CHANGELOG.md) ]]; then
-            echo "::set-output name=notes::true"
+          if [[ $(git log --pretty=format:'%s' ${{ github.event.before }}..main) ]]; then
+            # Release notes found (meaningful commit messages exist)
+            echo "NOTES=true" >> $GITHUB_ENV
           else
-            echo "::set-output name=notes::false"
+            # No release notes
+            echo "NOTES=false" >> $GITHUB_ENV
           fi
 
       - name: Create Release (if there are release notes)
