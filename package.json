@@ -1,6 +1,6 @@
 {
   "name": "aifistweb_old",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "scripts": {
     "build": "echo 'Add your build command here'"
   },
